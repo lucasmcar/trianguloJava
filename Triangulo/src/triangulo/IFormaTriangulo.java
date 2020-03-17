@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*Interface que implementa os métodos para formação e tipos de triângulos*/
 package triangulo;
 
 public interface FormaTriangulo {
     
     //Veriifica se forma triangulo
+    //Passando como parâmetro 3 valores do tipo inteiro, e retornando uma string caso as condições satisfaçam ou não
     public abstract String formarTriangulo(int l1, int l2, int l3);
     
     //Triangulo com 3 medidas diferentes
