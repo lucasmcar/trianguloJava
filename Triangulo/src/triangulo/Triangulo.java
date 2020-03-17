@@ -35,6 +35,7 @@ public class Triangulo implements FormaTriangulo{
         this.ladoC = ladoC;
     }
 
+    //Implementação da Interface IFormaTriangulo
     @Override
     public boolean trianguloEscaleno() {
         if(ladoA != ladoB && ladoB != ladoC && ladoA != ladoC)
@@ -65,9 +66,11 @@ public class Triangulo implements FormaTriangulo{
         return false;
     }
 
+    //Verifica se forma um triângulo de acordo com os valores passados como parâmetro
     @Override
     public String formarTriangulo(int l1, int l2, int l3) {
     
+        //Se um dos lados for menor que a soma dos outros dois, então forma um triângulo
         if((l1 < l2+ l3) && (l2 < l1 + l3) && (l3<l1 + l2))
         {
             return "Forma triângulo";
